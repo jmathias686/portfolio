@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+}
+
+.grid {
+    width: 220px;
+    height: 440px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    box-shadow: 5px 5px 5px ;
+}
+
+.grid div.blank {
+    height: 20px;
+    width: 20px;
+    border-left: 1px solid rgba(154, 148, 170, 0.11);
+    border-top: 1px solid rgba(154, 148, 170, 0.11);
+}
+
+/* clean border around entire grid*/
+ /* .grid div.blank:nth-child(10n) {
+    border-right: 1px solid rgb(154, 148, 170);
+}
+.grid div.blank:nth-child(n + 191):nth-child(-n + 200) {
+    border-bottom: 1px solid rgb(154, 148, 170);
+} */
+
+
+.mini-grid {
+    background-image: linear-gradient(rgb(152, 212, 250), rgb(130, 118, 206));
+    /* background-color: yellow; */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+    margin-left: 50px;
+}
+
+
+
+/* 'orange',         //l1
+    'purple',         //l2
+    'red',            //z1
+    'green',           //z2
+    'pink/purple',    //t
+    '#F9E79F',        //o
+    'lightblue aqua' //i */
+
+
+div.tetromino {
+    /* margin-left: 1px; */
+    /* margin-top: 1px; */
+    /* outline: 2px solid rgb(154, 148, 170); */
+    width: auto;
+    height: auto;
+}
+
+*.tet-l1 { /*looks good*/
+    background-color: #f8c471;
+    border-top: 3px solid #fdebd0;
+    border-left: 3px solid #fdebd0;
+    border-bottom: 3px solid #b9770e;
+    border-right: 3px solid #b9770e;
+}
+
+*.tet-l2 { /*looks good*/
+    background-color: #9575cd;
+    border-top: 3px solid #d1c4e9;
+    border-left: 3px solid #d1c4e9;
+    border-bottom: 3px solid #4527a0;
+    border-right: 3px solid #4527a0;
+}
+*.tet-z1 { /*looks bit dark*/
+    background-color: #e74c3c;
+    border-top: 3px solid #e6b0aa;
+    border-left: 3px solid #e6b0aa;
+    border-bottom: 3px solid #922b21;
+    border-right: 3px solid #922b21;
+}
+*.tet-z2 { /*looks pretty good*/
+    background-color: #62e769;
+    border-top: 3px solid #9bff9e;
+    border-left: 3px solid #9bff9e;
+    border-bottom: 3px solid #1db127;
+    border-right: 3px solid #1db127;
+}
+*.tet-t { /*bit too dull/dark*/
+    background-color: #ba68c8;
+    border-top: 3px solid #b39ddb;
+    border-left: 3px solid #b39ddb;
+    border-bottom: 3px solid #9c27b0;
+    border-right: 3px solid #9c27b0;
+}
+*.tet-o { /*looks too bright, need some more contrast for border*/
+    background-color: #ffde26;
+    border-top: 3px solid #ffec7d;
+    border-left: 3px solid #ffec7d;
+    border-bottom: 3px solid #bea61a;
+    border-right: 3px solid #bea61a;
+}
+*.tet-i { /*looks good, but could be less brigh*/
+    background-color: #66ffff;
+    border-top: 3px solid #ccffff;
+    border-left: 3px solid #ccffff;
+    border-bottom: 3px solid #00acc1;
+    border-right: 3px solid #00acc1;
+}
+
+

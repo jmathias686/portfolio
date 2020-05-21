@@ -1,0 +1,301 @@
+html,body {
+    margin: auto 0;
+}
+
+
+
+.zone {
+    cursor:pointer;
+    /* display:grid; */
+    color:#FFF;
+    font-size:1.2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+header {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+    justify-items: flex-start;
+}
+
+.char-name {
+    align-self: center;
+    width: 35%;
+}
+.char-box {
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    justify-items: stretch ;
+    width: 60%;
+}
+
+.char-box > * {
+    padding: 5px 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+
+/* COVER */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 120vh;
+    justify-content: space-between;
+}
+.container > * {
+    padding: 10px;
+    margin: 20px 20px;
+    border-radius: 5px;
+}
+
+#skills {
+    height: 100%;
+}
+#combat {
+    height: 35%;
+}
+#attacks {
+    height: 29%;
+    display: flex;
+    flex-direction: column;
+}
+#equipment {
+    height: 28%;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr 0.2fr 2fr;
+}
+
+#equipment * {
+    border: 1px solid black;
+}
+#traits {
+    height: 35%;
+    justify-self: stretch;
+}
+#features {
+    height: 60%;
+}
+
+/* #skills * {
+    width: 100%;
+} */
+
+
+/* PROJECT GRID */
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.sk-container {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    height: 60%;
+}
+
+.bot-left {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+
+.bot-left > * {
+    padding: 5% 0;
+}
+
+
+.sk-pt, .throws {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.sk-pt {
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.sk {
+    border: 1px dotted black;
+    padding: 0.5em 0;
+}
+
+.throws {
+    display: flex;
+    flex-direction: column;
+}
+
+.inspiration {
+    height: 8%;
+}
+.prof-bonus {
+    height: 10%;
+}
+
+.saving-throws {
+    height: 30%;
+}
+
+.skills {
+    flex-grow: 1;
+}
+
+.proficiencies {
+    flex-grow: 1;
+}
+
+#combat {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#combat > * {
+    font-size: 1vw;
+    text-align: center;
+}
+
+.armour,
+.initiative,
+.speed
+ {
+    width: 30%;
+}
+
+.hp, .tmp-hp {
+    width: 100%;
+}
+
+.hit-dice,.death-saves {
+    width: 50%;
+}
+
+.weapon-container {
+    border: 1px dashed black;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 2fr auto 2fr;
+}
+
+.atk-description {
+    flex-grow: 1;
+}
+
+.weapon-head {
+    display: flex;
+    grid-column: span 3;
+}
+
+.wpn-fill {
+    border: 0.8px solid black;
+    background-color: lightgray;
+    color: black;
+    font-size: auto;
+}
+
+.currency {
+    grid-column: 1/2;
+}
+
+.title {
+    grid-column: 1/ span 3;
+    grid-row: 8/ span 1;
+    text-align: center;
+}
+
+
+.equip-fill {
+    grid-area: 1 / 2 / span 7 / span 2;
+    background-color: lightgray;
+    color: black;
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+header{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+main{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+ .yellow{
+    margin: 0px 5px;
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue, footer{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
