@@ -1,0 +1,67 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
+
+.numbers {
+  background-color: blue;
+  width: 100%;
+}
+.title {
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: ;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr repeat(7,1fr);
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  width: auto;
+}
+
+.container > * {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clear {
+  background-color: rgba(35, 35, 255, 0.747);
+  border: 2px solid rgb(111, 112, 50);
+  border-radius: 100%;
+  margin: auto 5px;
+  padding: 3px 7px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: large;
+  color: whitesmoke;
+}
+
+.box {
+  background-color:rgba(141, 92, 255, 0.87);
+  border: 2px solid rgb(111, 112, 50);
+  border-radius: 10px;
+  padding: 10px 5px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(230, 233, 64);
+  font-weight: bold;
+  width:  80px;
+  margin: 5px 0px;
+}
+
+.num {
+  background-color: rgba(35, 35, 255, 0.747);
+  font-size: xx-large;
+}
+
+
+.tgt {
+  padding: 70% 0%;
+}

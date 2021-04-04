@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="numbers cont">
+      <div class="title"></div>
+      <div class="container">
+        <div class="box num tgt">634</div>
+        <div id="num1">
+          <button class="box big">Big</button>
+          <div class="box num n1">0</div>
+          <button class="box small">Small</button>
+        </div>
+        <div id="num2">
+          <button class="box big">Big</button>
+          <div class="box num n2">1</div>
+          <button class="box small">Small</button>
+        </div>
+        <div id="num3">
+          <button class="box big">Big</button>
+          <div class="box num n3">2</div>
+          <button class="box small">Small</button>
+        </div>
+        <div id="num4">
+          <button class="box big">Big</button>
+          <div class="box num n4">3</div>
+          <button class="box small">Small</button>
+        </div>
+        <div id="num5">
+          <button class="box big">Big</button>
+          <div class="box num n5">4</div>
+          <button class="box small">Small</button>
+        </div>
+        <div id="num6">
+          <button class="box big">Big</button>
+          <div class="box num n6">5</div>
+          <button class="box small">Small</button>
+        </div>
+        <button class="clear">
+          x
+        </button>
+      </div>
+    </div>
+  </body>
+
+
+  <script>
+    let ns = document.querySelectorAll('.num');
+    let nums = document.querySelector('.container');
+      nums.addEventListener('click', (event) => {
+        n = event.target.parentNode.children[1]
+        clicked = event.target.classList;
+        console.log(event.target.classList);
+        if (clicked[1] === "big") {
+          n.innerHTML = randBig();
+        } else if (clicked[1] === "small") {
+          n.innerHTML = randSmall();
+        } else if (clicked[2] === "tgt") {
+          event.target.innerHTML = randTarget();
+        } else if (clicked[0] === "clear") {
+          console.log("clear all")
+          clearAll();
+        }
+      });
+
+
+
+    function randBig() {
+      return Math.ceil(Math.random()*4) * 25;
+    }
+
+    function randSmall() {
+      return Math.ceil(Math.random()*10);
+    }
+
+    function randTarget() {
+      return Math.ceil(Math.random()*900)+100
+    }
+
+
+    function clearAll() {
+        Array.from(ns).forEach(el => {
+          el.innerHTML = "-"
+        })
+    }
+
+    clearAll();
+  </script>
+</html>
