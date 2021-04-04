@@ -1,4 +1,4 @@
-# portfolio
+portfolio
 Portfolio of my favourite projects
 
 
@@ -14,6 +14,16 @@ Portfolio of my favourite projects
 
 
 IDEAS:
+
+Charity App - mobile app
+Inspired by Raiz
+spare change (round to dollar on every purchase, maybe nearest power of 10 or something like that) can accumulate, and then when reaches certain amount, can be automatically donated to charities that a person wants
+Uses Bank API or something
+work out the architecture
+
+
+
+
 
 Visual Coding for kids/students
 

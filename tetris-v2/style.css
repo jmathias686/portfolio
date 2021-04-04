@@ -1,14 +1,29 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+}
+
 .container {
     display: flex;
 }
 
 .grid {
     width: 220px;
-    height: 440px;
+    height: 460px;
     background-color: black;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    box-shadow: 5px 5px 5px ;
+    box-shadow: 5px 5px 12px slategray ;
+}
+
+.grid div.top-container {
+    height: 40px;
+    width: auto;
+    grid-column: span 10;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    border-bottom: 2px solid rgba(154, 148, 170, 0.671);
 }
 
 .grid div.blank {
@@ -18,24 +33,18 @@
     border-top: 1px solid rgba(154, 148, 170, 0.11);
 }
 
-/* clean border around entire grid*/
- /* .grid div.blank:nth-child(10n) {
-    border-right: 1px solid rgb(154, 148, 170);
-}
-.grid div.blank:nth-child(n + 191):nth-child(-n + 200) {
-    border-bottom: 1px solid rgb(154, 148, 170);
-} */
-
 
 .mini-grid {
     background-image: linear-gradient(rgb(152, 212, 250), rgb(130, 118, 206));
-    /* background-color: yellow; */
     width: 80px;
     height: 80px;
     display: flex;
     flex-wrap: wrap;
-    /* background-color: yellow; */
     margin-left: 50px;
+}
+
+.taken {
+    height: 0px;
 }
 
 
@@ -49,10 +58,7 @@
     'lightblue aqua' //i */
 
 
-div.tetromino {
-    /* margin-left: 1px; */
-    /* margin-top: 1px; */
-    /* outline: 2px solid rgb(154, 148, 170); */
+.tetromino {
     width: auto;
     height: auto;
 }
