@@ -21,25 +21,25 @@ Work out the architecture - flesh it out more
 
 
 
-# Visual Coding for kids/students
+## Visual Coding for kids/students
 Similar to whats going around, but can have physical interactions with toys/learning models
 Kind of like that lego robowars I did in Year 10 but simplified and more intuitive for younger kids (ages 6-10)
 
 
 
-# App for University students:
+## App for University students:
 	Progress Tracker
 	Results prediction for each subject - based on topics, content, style etc.
 	Machine Learning/Deep learning/Neural Networks for current marks to predicted marks
 
 
 
-# Generals.io Bot:
+## Generals.io Bot:
 dev.generals.io/api
 
 
 
-# NAS-like server:
+## NAS-like server:
 	server hosted on computer with storage at home
 	accessible anywhere via url and login
 	additional private server only accessible locally?
@@ -48,5 +48,5 @@ dev.generals.io/api
 	different logins access different data
 
 
-# Notepad scanner:
+## Notepad scanner:
 	Templated notepad, scans and saves automatically via app to folder on cloud
